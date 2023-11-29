@@ -60,13 +60,12 @@ img {
 
 .top-list {
   display: flex;
-  padding: 24px 0;
   gap: 40px;
 }
 
-.top .adds {
-  display: flex;
-  align-items: center;
+.top .navigation .top-list li,
+.top .adds .contact li {
+  padding: 24px 0;
 }
 
 .top .adds .contact {
@@ -178,8 +177,18 @@ img {
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  /* position: fixed;
+  transform: scale(0); */
 }
 
 .info .info-list {
