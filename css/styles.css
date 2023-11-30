@@ -78,8 +78,7 @@ img {
   gap: 40px;
 }
 
-.top .navigation .top-list > li,
-.top .adds .contact > li {
+.top .top-list-link {
   padding: 24px 0;
 }
 
