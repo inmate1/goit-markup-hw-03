@@ -47,10 +47,10 @@ img {
 
 .top .container {
   display: flex;
+  justify-content: space-between;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  justify-content: space-between;
 }
 
 .top .container .navigation {
@@ -58,22 +58,7 @@ img {
   align-items: center;
 }
 
-.top-list {
-  display: flex;
-  gap: 40px;
-}
-
-.top .navigation .top-list li,
-.top .adds .contact li {
-  padding: 24px 0;
-}
-
-.top .adds .contact {
-  display: flex;
-  gap: 40px;
-}
-
-.top .hover {
+.top .navigation .logo {
   margin-right: 76px;
   color: var(--IRIS, #4d5ae5);
   font-family: 'Raleway', sans-serif;
@@ -84,11 +69,21 @@ img {
   text-transform: uppercase;
 }
 
-.top .hover .studio {
+.top .navigation .logo .studio {
   color: var(--NAVY-BLUE, #2e2f42);
 }
 
-.top .top-list .top-list-item {
+.top .navigation .top-list {
+  display: flex;
+  gap: 40px;
+}
+
+.top .navigation .top-list > li,
+.top .adds .contact > li {
+  padding: 24px 0;
+}
+
+.top .navigation .top-list .top-list-item {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
   font-size: 16px;
@@ -97,17 +92,19 @@ img {
   letter-spacing: 0.022em;
 }
 
-.top .top-list .top-list-item:hover,
-.top .top-list .top-list-item:focus {
+.top .navigation .top-list .top-list-item:hover,
+.top .navigation.top-list .top-list-item:focus {
   color: #404bbf;
 }
 
-.top .contact {
-  font-style: normal;
+.top .adds .contact {
+  display: flex;
+  gap: 40px;
   flex-shrink: 0;
+  font-style: normal;
 }
 
-.top .contact .top-contact {
+.top .adds .contact .top-contact {
   color: var(--SLATE, #434455);
   font-family: Roboto;
   font-size: 16px;
@@ -116,8 +113,8 @@ img {
   letter-spacing: 0.021em;
 }
 
-.top .contact .top-contact:hover,
-.top .contact .top-contact:focus {
+.top .adds .contact .top-contact:hover,
+.top .adds .contact .top-contact:focus {
   color: #404bbf;
 }
 
@@ -196,7 +193,7 @@ img {
   gap: 24px;
 }
 
-.info .info-list-item {
+.info .info-list .info-list-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
@@ -339,9 +336,9 @@ img {
 /* footer */
 
 .ftr {
-  background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #2e2f42;
 }
 
 .ftr .ftr-a {
