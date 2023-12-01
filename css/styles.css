@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #fff;
@@ -7,8 +6,8 @@ body {
 
 ul {
   margin: 0;
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 
 h1,
@@ -23,15 +22,17 @@ p {
 
 a {
   text-decoration-line: none;
-  font-style: normal;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 1440px;
+  width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -48,6 +49,7 @@ img {
 .top .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -76,10 +78,11 @@ img {
 .top .navigation .top-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .top .navigation .top-list .top-list-item {
+  display: block;
+  padding: 24px 0;
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
   font-size: 16px;
@@ -97,7 +100,6 @@ img {
   display: flex;
   gap: 40px;
   flex-shrink: 0;
-  padding: 24px 0;
   font-style: normal;
 }
 
@@ -125,6 +127,7 @@ img {
 }
 
 .hero .title {
+  display: block;
   max-width: 496px;
   margin: 0 auto;
   color: var(--WHITE, #fff);
@@ -181,8 +184,6 @@ img {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  /* position: fixed;
-  transform: scale(0); */
 }
 
 .info .info-list {
