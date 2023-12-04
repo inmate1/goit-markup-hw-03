@@ -81,7 +81,7 @@ img {
 }
 
 .top .navigation .top-list .top-list-item {
-  display: block;
+  display: inline-block;
   padding: 24px 0;
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
@@ -127,7 +127,6 @@ img {
 }
 
 .hero .title {
-  display: block;
   max-width: 496px;
   margin: 0 auto;
   color: var(--WHITE, #fff);
