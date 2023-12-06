@@ -302,7 +302,6 @@ img {
 .portfolio .row .row-list {
   width: calc((100% - 2 * 24px) / 3);
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background-color: aqua;
 }
 
 .portfolio .row .row-list .discription {
